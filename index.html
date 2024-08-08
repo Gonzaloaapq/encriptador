@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Encriptador de Texto</h1>
+  </header>
+
+  <main class="main">
+    <section class="form box">
+      <form>
+        <div class="form-controls">
+          <textarea class="text-input" id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+          <div class="text-left">
+            <label for="input-texto">Solo letras minúsculas, sin acento</label>
+          </div>
+          <div class="button-group">
+            <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
+            <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
+          </div>
+        </div>
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <div class="image-container">
+        <img src="./assets/VeraCrypt-Nico-Della-Vecchia.jpg" alt="Imagen personalizada">
+      </div>
+      <h2>Mensaje encriptado:</h2>
+      <textarea class="text-input-salida" id="msg" readonly></textarea>
+      <div class="button-group">
+        <input class="btn" type="button" value="Copiar" id="btn-copy">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="Copiar-pegar.js"></script>
+
+  <footer class="footer">
+    <p>Desarrollado por Gonzalo Angarita 2024</p>
+
+</footer>
+</body>
+</html>
